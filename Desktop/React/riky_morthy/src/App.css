@@ -1,0 +1,127 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: black;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+.ricki1{
+    width: 100%;
+    max-height: 400px;
+
+}
+.ricki2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    max-height: 100%;  
+}
+header{
+    position: relative;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    
+}
+.input_formulario{
+    max-width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid green;
+}
+.button_formulario{
+    height: 40px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    font-size: 18px;
+    border: 2px solid green;
+    
+}
+.article_title{
+    display: grid;
+    gap: 10px; 
+    text-align: center;
+    margin: 30px 0px;
+    background-color: black;
+    width: 100%;
+}
+.article_title h2 {
+    grid-column: 1 / -1; /* La etiqueta h2 ocupa todas las columnas */
+}
+.ul_info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para los elementos de la lista */
+    grid-column: 1 / -1; /* La lista ocupa todas las columnas */
+    list-style: none;
+}
+.cards_residentes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.article_cards{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    border: 1px solid rgb(62, 221, 83) ;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.article_cards header{
+    width: 100%;
+}
+.img_cards{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+li{
+    list-style: none;
+    margin: 5px;
+}
+.div_status{
+    position: absolute;
+    top: 10px;
+    background-color: black;
+    width: 100px;
+}
+.status{
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5px 3px 0px 3px;
+}
+.dead {
+    background-color: red;
+    
+}
+
+.alive {
+    background-color: green;
+}
+
+
